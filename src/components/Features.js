@@ -9,7 +9,7 @@ const FeatureCard = ({ iconUrl, iconText }) => {
     </div>
   );
 };
-const Features = ({}) => {
+const Features = () => {
   return (
     <div className={`${styles.section} ${styles.bgPrimary} banner03`}>
       <div className={`${styles.subSection} flex-col text-center`}>
