@@ -7,7 +7,7 @@ const App = () => {
     <>
       <SectionWrapper
         title="FOOD DELIVERY APP"
-        description="Best way to order delicios food from the comfort of your phone"
+        description="Best way to order delicious food from the comfort of your phone"
         showBtn
         mockImg={assets.onBoarding}
         banner="banner"
