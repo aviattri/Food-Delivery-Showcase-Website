@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "../styles/Global";
 import assets from "../assets";
+import Lottie from "react-lottie";
+import download from "../assets/animations/downloadApp.json";
+import scanCode from "../assets/animations/scanCode.json";
+import login from "../assets/animations/login.json";
 
 const Download = () => {
   return (
@@ -8,21 +12,70 @@ const Download = () => {
       <div className={`${styles.subSection} flex-col text-center`}>
         <div>
           <h1 className={`${styles.h1Text} ${styles.blackText} `}>
-            Download the source code
+            Steps to run the App
           </h1>
+          <button
+            className={`${styles.pText} ${styles.blackText} `}
+            onClick={() =>
+              window.open(
+                "https://apps.apple.com/us/app/expo-go/id982107779",
+                "_blank"
+              )
+            }
+          >
+            Download Expo go
+            <Lottie
+              options={{
+                loop: true,
+                autoplay: true,
+                animationData: download,
+              }}
+              height={200}
+              width={200}
+            />
+          </button>
+
+          <button
+            className={`${styles.pText} ${styles.blackText} `}
+            onClick={() =>
+              window.open(
+                "https://expo.dev/@aviattri/FoodDeliveryApp?serviceType=classic&distribution=expo-go",
+                "_blank"
+              )
+            }
+          >
+            Scan the QR code
+            <Lottie
+              options={{
+                loop: true,
+                autoplay: true,
+                animationData: scanCode,
+              }}
+              height={200}
+              width={200}
+            />
+          </button>
+
           <p className={`${styles.pText} ${styles.blackText} `}>
-            Get it on github
+            Login to the app to order food ( use any username and password )
           </p>
-        </div>
-        <button className={styles.btnPrimary} href="www.google.com">
-          Source Code
-        </button>
-        <div className={styles.flexCenter}>
-          <img
-            src={assets.scene}
-            alt="download_png"
-            className={styles.fullImg}
+          <Lottie
+            options={{
+              loop: true,
+              autoplay: true,
+              animationData: login,
+            }}
+            height={200}
+            width={200}
           />
+        </div>
+        {/* <button className={styles.btnPrimary} href="www.google.com">
+          Source Code
+        </button> */}
+        <div className={styles.flexCenter}>
+          {/* <p className={`${styles.pText} ${styles.blackText} `}>
+            Scan the qr code
+          </p> */}
         </div>
       </div>
     </div>

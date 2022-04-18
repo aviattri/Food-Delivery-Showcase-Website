@@ -7,6 +7,10 @@ import javascript from "./javascript.png";
 import react from "./react.png";
 import scene from "./scene.png";
 import mockup from "./mockup.png";
+import onBoarding from "./onBoarding.png";
+import home from "./home.png";
+import mock1 from "./mock1.png";
+import mock2 from "./mock2.png";
 
 const assets = {
   homeHero,
@@ -18,5 +22,9 @@ const assets = {
   react,
   scene,
   mockup,
+  onBoarding,
+  home,
+  mock1,
+  mock2,
 };
 export default assets;

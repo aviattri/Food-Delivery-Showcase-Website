@@ -14,7 +14,7 @@ const styles = {
   h1Text:
     "font-bold font-IBMPlex text-5xl sm:text-4xl minmd:text-6xl minlg:text-8xl leading-12 minmd:leading-13",
   pText:
-    "my-5 minmd:my-10 font-IBMPlex font-light text-xl minmd:text-3xl minlg:text-4xl minmd:leading-16",
+    "my-5 mt-10 minmd:my-10 font-IBMPlex font-light text-xl minmd:text-3xl minlg:text-4xl minmd:leading-16",
   descriptionText:
     "my-5 minmd:my-10 font-IBMPlex font-light text-xl minmd:text-3xl minlg:text-4xl minmd:leading-16",
   btnText: "text-white font-IBMPlex minmd:text-lg",
@@ -24,15 +24,15 @@ const styles = {
   btnBlack:
     "bg-black flex items-center py-2 px-4 rounded-md mt-2 w-fit cursor-pointer",
 
-  section: "flex justify-center items-center p-16 sm:p-8",
+  section: "flex justify-center items-center p-10 sm:p-8",
   subSection: "flex items-center w-full minmd:w-3/4",
   descDiv: "flex-1 w-full flex justify-start flex-col md:mb-10 ",
 
-  flexCenter: "flex justify-center items-center",
+  flexCenter: "flex flex-col justify-start items-start",
   flexWrap: "flex justify-center flex-wrap",
 
   fullImg: "w-full h-full object-cover",
-  sectionImg: "w-full h-full minmd:w-11/12 minmd:h-11/12 object-contain",
+  sectionImg: "w-full h-half minmd:w-11/12 minmd:h-11/12 object-contain",
   btnIcon: "w-5 h-5 minmd:w-10 minmd:h-10 object-contain",
 
   featureImg: "w-20 h-20 minlg:w-40 minlg:h-40 object-contain mb-1",

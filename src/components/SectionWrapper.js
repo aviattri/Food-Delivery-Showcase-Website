@@ -6,17 +6,18 @@ const SectionWrapper = ({
   title,
   description,
   showBtn,
-  mockupImg,
+  mockImg,
+  mockImg2,
   banner,
   reverse,
 }) => {
   return (
     <div
-      className={`min-h-screen ${styles.section} 
+      className={`min-h-screen my-0 ${styles.section} 
       ${reverse ? styles.bgWhite : styles.bgPrimary} ${banner} `}
     >
       <div
-        className={`flex items-center  
+        className={`flex items-center my-0
         ${reverse ? styles.boxReverseClass : styles.boxClass} 
          w-11/12 sm:w-full mindmd-3/4`}
       >
@@ -40,15 +41,18 @@ const SectionWrapper = ({
           {showBtn && (
             <Button
               assetUrl={assets.expo}
-              link="https://expo.dev/@aviattri/NFT-Project?serviceType=classic&distribution=expo-go"
+              link="https://expo.dev/@aviattri/FoodDeliveryApp?serviceType=classic&distribution=expo-go"
             />
           )}
         </div>
         <div
           className={`${reverse ? "fadeRightMini" : "fadeLeftMini"} 
-          ${styles.flexCenter} flex-1 p-8 sm:px-0`}
+          ${styles.flexCenter} flex-1 p-0 sm:px-0`}
         >
-          <img src={mockupImg} alt="mockupImg" className={styles.sectionImg} />
+          <img src={mockImg} alt="mockupImg" className={styles.sectionImg} />
+          {mockImg2 && (
+            <img src={mockImg2} alt="mockupImg" className={styles.sectionImg} />
+          )}
         </div>
       </div>
     </div>

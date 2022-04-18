@@ -6,33 +6,28 @@ const App = () => {
   return (
     <>
       <SectionWrapper
-        title="NFT SHOWCASE APP"
-        description="Amazing NFT Store where you can buy the trendy Monkey NFTs"
+        title="FOOD DELIVERY APP"
+        description="Best way to order delicios food from the comfort of your phone"
         showBtn
-        mockupImg={assets.homeHero}
+        mockImg={assets.onBoarding}
         banner="banner"
       />
       <SectionWrapper
         title="Clean UX/UI built"
-        description="Powered by Expo and tailwind"
-        mockupImg={assets.homeCards}
-        reverse
-      />
-      <Features />
-      <SectionWrapper
-        title="Deployment"
-        description="NFT Showcase is built on expo which runs natively on all user devices"
-        mockupImg={assets.feature}
+        description="Powered by Expo, Figma and React-Native"
+        mockImg={assets.home}
         reverse
       />
       <SectionWrapper
         title="Creative Showcase"
-        description="App contains various features like Favourites, Search, and Details about each NFT"
-        mockupImg={assets.mockup}
+        description="App contains various features like Ordering, Filter, Checkout, Favourites, Profile, Drawer, MapView, Delivery Status and much more"
+        mockImg={assets.mock1}
+        mockImg2={assets.mock2}
         banner="banner02"
       />
-      <Download />
 
+      <Download />
+      <Features />
       <div className="px-4 py-2 justifiy-center items-center bg-primary flex-col text-center banner04">
         <p className={`${styles.pText} ${styles.whiteText}`}>
           Made by Aviraj Attri. {""}
