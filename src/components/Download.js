@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../styles/Global";
-import assets from "../assets";
 import Lottie from "react-lottie";
 import download from "../assets/animations/downloadApp.json";
 import scanCode from "../assets/animations/scanCode.json";
